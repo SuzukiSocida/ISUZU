@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Document multipages</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page {
+      width: 20.5cm;
+      height: 21cm;
+      margin: 20px 0;
+      position: relative;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+    .page img {
+      width: 20.5cm;
+      height: 21cm;
+      object-fit: cover; /* recadre si l’image n’a pas la bonne proportion */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page #1 avec zone cliquable -->
+  <div class="page">
+    <img src="ISUZU01.jpg" usemap="#map1" alt="Page 1">
+    <map name="map1">
+      <area shape="rect" coords="180,380,580,630"
+            href="https://suzukisocida.github.io/yangoXsocida/"
+            target="_blank" alt="Zone 1">
+    </map>
+  </div>
+
+  <!-- Page #2 -->
+  <div class="page">
+    <img src="ISUZU02.jpg" alt="Page 2">
+  </div>
+
+  <!-- Page #3 -->
+  <div class="page">
+    <img src="ISUZU03.jpg" alt="Page 3">
+  </div>
+
+  <!-- Page #4 -->
+  <div class="page">
+    <img src="ISUZU04.jpg" alt="Page 4">
+  </div>
+
+  <!-- Page #5 -->
+  <div class="page">
+    <img src="ISUZU05.jpg" alt="Page 5">
+  </div>
+
+  <!-- Page #6 -->
+  <div class="page">
+    <img src="ISUZU06.jpg" alt="Page 6">
+  </div>
+
+  <!-- Page #7 -->
+  <div class="page">
+    <img src="ISUZU07.jpg" alt="Page 7">
+  </div>
+
+  <!-- Page #8 -->
+  <div class="page">
+    <img src="ISUZU08.jpg" alt="Page 8">
+  </div>
+
+  <!-- Page #9 -->
+  <div class="page">
+    <img src="ISUZU09.jpg" alt="Page 9">
+  </div>
+
+  <!-- Page #10 -->
+  <div class="page">
+    <img src="ISUZU10.jpg" alt="Page 10">
+  </div>
+
+</body>
+</html>
